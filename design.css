@@ -1,0 +1,56 @@
+* {box-sizing: border-box;}
+body {font-family: 'Open Sans', sans-serif; font-size: 20px;}
+body, body > * {margin: 0;}
+.box {display: flex; justify-content: center; align-items: center;}
+header {background-color: #5D5A58; padding: 10px;}
+header h1 {color: #FFF; font-size: 3rem;}
+nav:not([id]) {position: sticky; top: 0; background-color: #4C4A48; padding: 5px;}
+nav a {text-decoration: none; color: #FFF; margin: 0 5px; padding: 5px 20px;}
+nav a:hover {text-decoration: underline;}
+#mobile {display: none;}
+#mobile span {color: #FFF;}
+article, footer {padding: 20px;}
+#beats {background-color: #F8F8F8;}
+h2 {color: #615550;}
+iframe {display: block;  width: 100%; height: 500px; margin-left: auto; margin-right: auto;}
+#pricing div {flex-flow: row wrap;}
+.license {flex: 1; list-style-type: none; padding: 0; margin: 5px; box-shadow: 0px 3px 8px #989989;}
+li {text-align: center; padding: 5px;}
+li:first-child {background-color: #5D5A58; color: #FFF; padding: 15px; font-weight: bold;}
+li:nth-child(even) {background-color: #F5F5F5;}
+li:nth-child(2) {padding: 10px; font-size: 1.8rem;}
+#twin {display: flex; flex-flow: row nowrap; padding: 0;}
+#twin > * {flex: 1;}
+input, textarea {
+    display: block;
+    color: #000;
+    background-color: #FFF;
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+    border: none;
+    border-bottom: 3px solid #898E8C;
+}
+textarea {height: 100px; resize: none;}
+input[type=submit] {border: none; background-color: #838487; color: #FFF;}
+#contact {background-color: #F5F5F5;}
+#contact div {flex-flow: row nowrap;}
+#contact div a {margin: 5px;}
+span[class~="fa-facebook"] {color: #3b5998;}
+span[class~="fa-twitter"] {color: #1da1f2;}
+span[class~="fa-instagram"] {color: #AB47BC;}
+span[class~="fa-youtube"] {color: #f44336;}
+#mail-list {background-color: #EEEEEE;}
+footer {flex-direction: column;}
+@media screen and (max-width: 550px) {
+    header h1 {font-size: 2rem;}
+    #desktop {display: none;}
+    #mobile {display: flex;}
+}
+@media screen and (max-width: 750px) {
+    #pricing div, #twin {flex-direction: column;}
+    input, textarea {font-size: 1.2rem;}
+}
